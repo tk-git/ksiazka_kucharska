@@ -1,0 +1,269 @@
+\documentclass{book}
+
+\title{Gotujemy z Martą i Tomaszem}
+\date{2018-11-28}
+\author{
+	Marta Klimek
+	\and
+	Tomasz Klimek
+}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[polish]{babel}
+\usepackage{hyperref}
+
+\renewcommand{\chaptername}{Rozdział}
+\renewcommand{\contentsname}{Spis treści}
+
+\newcommand{\skladniki}[1]{\subsection*{Składniki}
+	\begin{tabular}{ll}
+		#1
+	\end{tabular}
+}
+\newcommand{\skladnik}[3]{#3&#1 #2\\}
+\newcommand{\sztuk}[2]{\skladnik{#1}{szt}{#2}}
+\newcommand{\gram}[2]{\skladnik{#1}{g}{#2}}
+\newcommand{\litr}[2]{\skladnik{#1}{l}{#2}}
+\newcommand{\lyzka}[2]{\skladnik{#1}{łyż}{#2}}
+\newcommand{\lyzeczka}[2]{\skladnik{#1}{m.łyż}{#2}}
+\newcommand{\przyprawa}[1]{\skladnik{}{}{#1}}
+
+\newcommand{\przygotowanie}[1]{\subsection*{Sposób przygotowania}
+	\begin{enumerate}
+		#1
+	\end{enumerate}
+}
+\newcommand{\krok}[1]{\item #1}
+
+\newcommand{\podanie}[1]{\subsection*{Propozycja podania}#1}
+
+\newcommand{\wartosci}[4]{\subsection*{Wartości odżywcze w 100 g}
+	KCal: #1\\
+	Białko: #2\\
+	Tłuszcz: #3\\
+	Węglowodany: #4
+}
+
+\newcommand{\zrodlo}[1]{\subsection*{Źródło}#1}
+\newcommand{\link}[1]{Strona internetowa: \url{#1}}
+\newcommand{\ksiazka}[3]{Ksiazka: \textbf{#1}, #2 (str.#3)}
+
+\begin{document}
+	\maketitle
+	\tableofcontents
+
+	\chapter{Zupy}
+		\newpage
+		
+		\section{Zupa dyniowa}
+			\skladniki{
+				\lyzka{1}{Olej roślinny}
+				\sztuk{1/2}{Cebula}
+				\sztuk{1}{Pomidor}
+				\sztuk{1}{Ząbek czosnku}
+				\sztuk{2}{Starty imbir}
+				\sztuk{1}{Mała papryczka chili}
+				\sztuk{2}{Mniejsze lub średnie jabłko (zwykłe, deserowe)}
+				\gram{500}{Upieczona dynia bez skóry (ewentualnie dyni świeżej)}
+				\lyzeczka{1/3}{Cynamon}
+				\litr{ok. 1,25}{Bulion warzywny lub wegański}
+				\przyprawa{Sól}
+				\przyprawa{Pieprz}
+			}
+			\przygotowanie{
+				\krok{Podgrzać olej w większym garnku z grubym dnem, dodać cebulę i zeszklić.}
+				\krok{Dodać starty czosnek, starty imbir i przekrojoną na pół, wypestkowaną chili. Smażyć przez minutę.}
+				\krok{Dodać obrane, pozbawione gniazd nasiennych i pokrojone w kostkę jabłka (oraz 	surową dynię pokrojoną w kosteczkę - jeśli jej używamy). Smażyć mieszając co jakiś czas przez około 4 - 5 minut. Gdyby warzywa zaczęły przywierać do dna garnka, można dodać 	2 - 3 łyżki bulionu.}
+				\krok{Dodać dynię upieczoną, pokrojoną na kawałki. Doprawić solą, pieprzem, cynamonem i zagotować.}
+				\krok{Wlać bulion w takiej ilości aby sięgał 2 cm ponad poziom warzyw. Zagotować, 	przykryć i gotować przez około 10 minut na mniejszym ogniu aż dynia będzie miękka.}
+				\krok{Zmiksować na gładkie puree dodając w razie potrzeby więcej zagotowanego bulionu.}
+			}
+			\podanie{
+				\paragraph{}Świeżo zmielony kolorowy pieprz, orzechy włoskie podprażone na suchej patelni, chleb pieczony w żaroodpornym garnku z grubą i chrupiącą skórką np. z dodatkiem gorgonzoli (z TEGO przepisu). Gorącą zupę można posypać posiekaną gorgonzolą lub skropić mlekiem kokosowym.
+			}
+			\zrodlo{\link{https://www.kwestiasmaku.com/zielony_srodek/dynia/zupa_dyniowo_jablkowa/przepis.html}}
+			\newpage
+	
+		\section{Tytuł przepisu} %--------------------------------------PRZYKŁAD
+			\skladniki{
+				\lyzka{1}{Składnik A}
+				\sztuk{2}{Składnik B}
+				\gram{100}{Składnik C}
+				\lyzeczka{1}{Składnik D}
+				\litr{3}{Składnik E}
+				\przyprawa{Sól}
+				\przyprawa{Pieprz}
+			}
+			\przygotowanie{
+				\krok{Pierwszy krok}
+				\krok{Drugi krok}
+				\krok{Trzeci krok}
+			}
+			\podanie{
+				\paragraph{}Jak podawać.
+			}
+			\wartosci{999}{99}{99}{99}
+			\zrodlo{\ksiazka{Tytuł książki}{Autor książki}{123}}
+			\newpage
+		
+	\chapter{Dania wegetariańskie}
+		\newpage
+	
+		\section{Tytuł przepisu} %--------------------------------------PRZYKŁAD
+			\skladniki{
+				\lyzka{1}{Składnik A}
+				\sztuk{2}{Składnik B}
+				\gram{100}{Składnik C}
+				\lyzeczka{1}{Składnik D}
+				\litr{3}{Składnik E}
+				\przyprawa{Sól}
+				\przyprawa{Pieprz}
+			}
+			\przygotowanie{
+				\krok{Pierwszy krok}
+				\krok{Drugi krok}
+				\krok{Trzeci krok}
+			}
+			\podanie{
+				\paragraph{}Jak podawać.
+			}
+			\wartosci{999}{99}{99}{99}
+			\zrodlo{\ksiazka{Tytuł książki}{Autor książki}{123}}
+			\newpage
+	
+	\chapter{Dania rybne}
+		\newpage
+	
+		\section{Tytuł przepisu} %--------------------------------------PRZYKŁAD
+			\skladniki{
+				\lyzka{1}{Składnik A}
+				\sztuk{2}{Składnik B}
+				\gram{100}{Składnik C}
+				\lyzeczka{1}{Składnik D}
+				\litr{3}{Składnik E}
+				\przyprawa{Sól}
+				\przyprawa{Pieprz}
+			}
+			\przygotowanie{
+				\krok{Pierwszy krok}
+				\krok{Drugi krok}
+				\krok{Trzeci krok}
+			}
+			\podanie{
+				\paragraph{}Jak podawać.
+			}
+			\wartosci{999}{99}{99}{99}
+			\zrodlo{\ksiazka{Tytuł książki}{Autor książki}{123}}
+			\newpage
+	
+	\chapter{Dania mięsne}
+		\newpage
+	
+		\section{Tytuł przepisu} %--------------------------------------PRZYKŁAD
+			\skladniki{
+				\lyzka{1}{Składnik A}
+				\sztuk{2}{Składnik B}
+				\gram{100}{Składnik C}
+				\lyzeczka{1}{Składnik D}
+				\litr{3}{Składnik E}
+				\przyprawa{Sól}
+				\przyprawa{Pieprz}
+			}
+			\przygotowanie{
+				\krok{Pierwszy krok}
+				\krok{Drugi krok}
+				\krok{Trzeci krok}
+			}
+			\podanie{
+				\paragraph{}Jak podawać.
+			}
+			\wartosci{999}{99}{99}{99}
+			\zrodlo{\ksiazka{Tytuł książki}{Autor książki}{123}}
+			\newpage
+	
+	\chapter{Sałatki}
+		\newpage
+	
+		\section{Tytuł przepisu} %--------------------------------------PRZYKŁAD
+			\skladniki{
+				\lyzka{1}{Składnik A}
+				\sztuk{2}{Składnik B}
+				\gram{100}{Składnik C}
+				\lyzeczka{1}{Składnik D}
+				\litr{3}{Składnik E}
+				\przyprawa{Sól}
+				\przyprawa{Pieprz}
+			}
+			\przygotowanie{
+				\krok{Pierwszy krok}
+				\krok{Drugi krok}
+				\krok{Trzeci krok}
+			}
+			\podanie{
+				\paragraph{}Jak podawać.
+			}
+			\wartosci{999}{99}{99}{99}
+			\zrodlo{\ksiazka{Tytuł książki}{Autor książki}{123}}
+			\newpage
+	
+	\chapter{Desery}
+		\newpage
+	
+		\section{Tytuł przepisu} %--------------------------------------PRZYKŁAD
+			\skladniki{
+				\lyzka{1}{Składnik A}
+				\sztuk{2}{Składnik B}
+				\gram{100}{Składnik C}
+				\lyzeczka{1}{Składnik D}
+				\litr{3}{Składnik E}
+				\przyprawa{Sól}
+				\przyprawa{Pieprz}
+			}
+			\przygotowanie{
+				\krok{Pierwszy krok}
+				\krok{Drugi krok}
+				\krok{Trzeci krok}
+			}
+			\podanie{
+				\paragraph{}Jak podawać.
+			}
+			\wartosci{999}{99}{99}{99}
+			\zrodlo{\ksiazka{Tytuł książki}{Autor książki}{123}}
+			\newpage
+	
+	\chapter{Przetwory}
+		\newpage
+	
+		\section{Tytuł przepisu} %--------------------------------------PRZYKŁAD
+			\skladniki{
+				\lyzka{1}{Składnik A}
+				\sztuk{2}{Składnik B}
+				\gram{100}{Składnik C}
+				\lyzeczka{1}{Składnik D}
+				\litr{3}{Składnik E}
+				\przyprawa{Sól}
+				\przyprawa{Pieprz}
+			}
+			\przygotowanie{
+				\krok{Pierwszy krok}
+				\krok{Drugi krok}
+				\krok{Trzeci krok}
+			}
+			\podanie{
+				\paragraph{}Jak podawać.
+			}
+			\wartosci{999}{99}{99}{99}
+			\zrodlo{\ksiazka{Tytuł książki}{Autor książki}{123}}
+			\newpage
+	
+	\chapter{Porady}
+		\newpage
+	
+		\section{Jak upiec dynię}
+			\paragraph{}Około 2 kg dyni umyć i pokroić na około 6 części, usunąć pestki. Położyć na blaszce skórką do dołu i wstawić do piekarnika nagrzanego do 200 stopni C. Piec przez około 1 godzinę, lub do czasu aż dynia będzie miękka (wbity widelec łatwo będzie zagłębiał się w miąższu). Łyżką wydrążyć miąższ z upieczonej dyni i zmiksować ją blenderem na gładkie purée. Odmierzyć potrzebną ilość.
+	
+		\section{Tytuł porady} %--------------------------------------PRZYKŁAD
+			\paragraph{}Treść porady
+
+\end{document}
